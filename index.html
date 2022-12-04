@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ola clone</title>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <!--header and side toggle bar-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img class="ola-logo ms-3 me-5" src="logo/ola-white-logo.svg" alt="ola logo" />
+
+        <div class="collapse navbar-collapse" id="">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Ola S1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Ola Electric</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Ola future factory</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <div class="d-md-flex d-none">
+            <div class="bg-dark">
+              <a class="nav-link text-light" href="#">Book an Ola Cab</a>
+            </div>
+            <div class="bg-light ms-3 me-3">
+              <a class="nav-link text-dark" href="#">Free S1 Test Ride</a>
+            </div>
+          </div>
+          <button class="hamburger-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <img src="logo/Hamburger.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="option-wrapper position-relative">
+          <ul>
+            <li>
+              <a href="">Book an Ola Cab</a>
+            </li>
+            <li>
+              <a href="">Drive with Ola</a>
+            </li>
+            <li>
+              <a href="">Ola S1</a>
+            </li>
+            <li>
+              <a href="">Ola Electric</a>
+            </li>
+            <li>
+              <a href="">Ola FutureFactory</a>
+            </li>
+            <li>
+              <a href="">Ola Corporate</a>
+            </li>
+            <li>
+              <a href="">Ola Foundation</a>
+            </li>
+            <li>
+              <a href="">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="fix-bottom">
+          <a class="fix-bottom-image" href="">
+            <img src="logo/pink-banner-mob.png" alt="" />
+          </a>
+
+          <div class="fix-bottom-footer">
+            <a class="text-dark" href=""> careers </a>
+            <a class="text-dark" href=""> Notices </a>
+            <a class="text-dark" href=""> Privacy </a>
+            <a class="text-dark" href=""> T&C </a>
+          </div>
+          <div class="fix-bottom-footer">
+            <div>
+              <a href="">
+                <img src="logo/OLA-black.svg" alt="OLA-black-logo" />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="logo/instagram-icon.svg" alt="instagram-icon" />
+              </a>
+              <a href="">
+                <img src="logo/youtube-icon.svg" alt="youtube-icon" />
+              </a>
+              <a href="">
+                <img src="logo/twitter-icon.svg" alt="twitter-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--section-1-->
+
+  <section>
+    <div class="hero-banner desktop-only">
+      <p class="title-1 fw-500 font-48 lh-48 main-title-abs">
+        Moving people, and the world
+      </p>
+      <div>
+        <!--<video id="video-wrapper" controlslist="nodownload" playsinline="" autoplay="" muted="" loop="" style="width: 100%; height: auto;">
+                    <source media="all and (max-width: 480px)" id="video-element" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/banner-video-mob.mp4" type="video/mp4">
+                    Your browser does not support the video.
+                </video>-->
+      </div>
+    </div>
+  </section>
+
+  <!--section-2-booking-widget-->
+
+  <section class="booking-widget">
+    <div class="container">
+      <div class="booking-widget-container">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+              role="tab" aria-controls="pills-home" aria-selected="true">
+              Daily
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+              Rental
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+              Outstation
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="booking-widget-location d-flex flex-column flex-md-row">
+              <div class="location-item mt-3">
+                <input type="text" placeholder="Current Location" />
+                <img src="logo/current-location.svg" alt="" />
+              </div>
+              <div class="location-item mt-3">
+                <input type="text" placeholder="Enter Destination" />
+                <img src="logo/forward-arrow.svg" alt="" />
+              </div>
+              <div class="mt-3">
+                <button class="booking-button">
+                  SEARCH <span class="book-ola">OLA CABS</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="booking-widget-location d-flex flex-column flex-md-row">
+              <div class="location-item mt-3">
+                <input type="text" placeholder="Current Location" />
+                <img src="logo/current-location.svg" alt="" />
+              </div>
+              <div class="location-item mt-3">
+                <input type="text" placeholder="Select Package" />
+                <img src="logo/forward-arrow.svg" alt="" />
+              </div>
+              <div class="mt-3">
+                <button class="booking-button">
+                  SEARCH <span class="book-ola">RENTAL CABS</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="booking-widget-location d-flex flex-column flex-md-row">
+              <div class="location-item mt-3">
+                <input type="text" placeholder="Current Location" />
+                <img src="logo/current-location.svg" alt="" />
+              </div>
+              <div class="location-item mt-3">
+                <input type="text" placeholder="Enter Destination" />
+                <img src="logo/forward-arrow.svg" alt="" />
+              </div>
+              <div class="mt-3">
+                <button class="booking-button">
+                  SEARCH <span class="book-ola">OUTSTATION CABS</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--section-3-->
+
+  <section class="section-3 container-fluid section-padding">
+    <div class="container">
+      <div class="image-div-section-3 col-12 d-flex justify-content-center">
+        <img class="img-fluid d-lg-flex d-none" src="images/banner-green-desktop.jpg" alt="banner-green-desktop" />
+        <img class="img-fluid d-sm-flex d-lg-none" src="images/banner-green-mob.jpg" alt="banner-green-mob" />
+      </div>
+      <div class="col-12 d-flex justify-content-center electrified">
+        <h1 class="text-center">
+          Global mobility ecosystem driving <br />
+          communication forward
+        </h1>
+      </div>
+      <div class="col-12 container">
+        <div class="row">
+          <div class="card col-sm" style="width: 18rem">
+            <img class="card-img-top" src="images/cities-covered.svg" alt="Card image cap" />
+            <div class="card-body text-center">
+              <h1 class="card-title">250+</h1>
+              <h3>Cities covered</h3>
+              <p class="card-text">
+                Across India, Australia, New Zealand and the UK
+              </p>
+            </div>
+          </div>
+          <div class="card col-sm" style="width: 18rem">
+            <img class="card-img-top" src="images/yearly-rides.svg" alt="Card image cap" />
+            <div class="card-body text-center">
+              <h1 class="card-title">55 cr+</h1>
+              <h3>Yearly rides</h3>
+              <p class="card-text">Booked by our customers every year</p>
+            </div>
+          </div>
+          <div class="card col-sm" style="width: 18rem">
+            <img class="card-img-top" src="images/kilometers-covered.svg" alt="Card image cap" />
+            <div class="card-body text-center">
+              <h1 class="card-title">12 cr+</h1>
+              <h3>Kilometers on s1</h3>
+              <p class="card-text">
+                Distance covered on Ola S1 scooters within a year of launch
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ssecton-4-->
+  <section class="section-4 section-transform section-padding">
+    <div class="container container-transform">
+      <div class="text-center">
+        <h1 class="ola-s1">Ola S1. The best scooter ever built</h1>
+      </div>
+      <div class="">
+        <img class="img-fluid" src="images/s1-sport-web.png" alt="s1-sport-web" />
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-12 order-1 order-lg-0">
+          <div>
+            <p>
+              With fantastic features such as Hyper Mode and Eco Mode, get an
+              unbelievable top speed of 116 KM/H and an unbeatable range that
+              can reach up to 300 km.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="d-flex justify-content-between">
+            <div class="black-box  rounded-0 spec-card">
+              <div>181 <span>Km</span></div>
+              <div>Range</div>
+            </div>
+            <div class="black-box  rounded-0 spec-card">
+              <div>181 <span>Km</span></div>
+              <div>Range</div>
+            </div>
+            <div class="black-box  rounded-0 spec-card">
+              <div>181 <span>Km</span></div>
+              <div>Range</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="img-fluid d-md-block d-none" src="images/pink-banner-desktop.png" alt="">
+        <img class="img-fluid d-md-none d-block" src="images/pink-banner-mob.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="factory section-padding section-transform">
+    <div class="container container-transform">
+      <h1 class="text-center electrified">Tech for the world, made in India</h1>
+      <div class="slider-wrapper">
+        <div class="factory-item my-5 d-flex">
+          <div class="img-wrapper col-md-8">
+            <img src="images/ola-futurefactory.png" class="item-image" alt="...">
+          </div>
+          <div class="img-desc col-md-4">
+            <a class="factory-link" href="javascript:(void(0));">
+              <h5>Ola Future Factory</h5>
+            </a>
+            <p>Powered by over 3000 AI-driven robots, the Ola Futurefactory is the world's most advanced two-wheeler
+              manufacturing facility.</p>
+          </div>
+        </div>
+        <div class="factory-item my-5 d-flex flex-md-row-reverse">
+          <div class="img-wrapper  col-md-8">
+            <img src="images/battery-innovation-center.png" class="item-image" alt="...">
+          </div>
+          <div class="img-desc col-md-4">
+            <a class="factory-link" href="javascript:(void(0));">
+              <h5>Battery Innovation Centre</h5>
+            </a>
+            <p>We're building a state of the art centre with a $500 million investment making it one of the world's
+              largest most advanced cell R&D facility.</p>
+
+          </div>
+        </div>
+        <div class="factory-item my-5 d-flex">
+          <div class="img-wrapper  col-md-8">
+            <img src="images/battery-img.png" class="item-image" alt="...">
+          </div>
+          <div class="img-desc col-md-4">
+            <a class="factory-link" href="javascript:(void(0));">
+              <h5>India's first
+                Indigenous Cell</h5>
+            </a>
+            <p>We're working towards making our own cell technology to scale faster and revolutionise the EV segment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="first-footer">
+    <div class="footerContainer">
+      <div class="d-md-flex d-block row">
+        <div class="col-md-2 col-lg-2">
+          <div>
+            <img src="logo/OLA-black.svg" alt="OLA-black-logo">
+          </div>
+          <div class="m-4">
+            
+            <div class="mt-2">
+              <img src="logo/youtube-icon.svg" alt="youtube-icon">
+            </div>
+            <div class="mt-2">
+              <img src="logo/instagram-icon.svg" alt="instagram-icon">
+            </div>
+            <div class="mt-2">
+              <img src="logo/twitter-icon.svg" alt="twitter-icon">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <ul>
+            <li>Book a cab</li>
+            <li>Drive with us</li>
+            <li>Outstation</li>
+            <li>Rental</li>
+            <li>Ola money</li>
+            <li>Corporate</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <ul>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>support</li>
+            <li>Careers</li>
+            <li>Media center</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <ul>
+            <li>Ola S1</li>
+            <li>FutureFactory</li>
+            <li>Electric</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <p>
+            <i><b>Stay up to date</b></i>
+          </p>
+          <div>
+            <input class="footer-input-box" type="text" placeholder="Enter your email" />
+          </div>
+          <div class="mt-3">
+            <button class="booking-button">SUBSCRIBE TO <span class="book-ola">NEWSLETTER</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-seperator"></div>
+    <div class="footerBottomContainer d-md-flex d-block">
+      <p>Copyright © 2022 Ola Electric Mobility Pvt Ltd. All Rights Reserved.</p>
+      <ul class="foots-nav">
+        <li>
+          <a href="#">Notices</a>
+        </li>
+        <li>
+          <a href="#">Privacy policy</a>
+        </li>
+        <li>
+          <a href="#">Terms of use</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!--background change onscroll-->
+
+  <!--bootstrap 5 js-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(window).scroll(function () {
+      var scrollTop = $(window).scrollTop();
+      $(".navbar").addClass("darkHeader");
+
+      if (scrollTop >= 500) {
+        //clearHeader, not clearheader - caps H
+        $(".navbar").removeClass("normal");
+        $(".navbar").addClass("darkHeader");
+      } else {
+        $(".navbar").removeClass("darkHeader");
+        $(".navbar").addClass("normal");
+      }
+    }); 
+  </script>
+</body>
+
+</html>

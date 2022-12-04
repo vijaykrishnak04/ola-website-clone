@@ -1,0 +1,465 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*--header--*/
+header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.navbar {
+    background-color: black;
+    height: 64px;
+}
+
+.right-section {
+    display: flex;
+}
+
+.hamburger-button {
+    border: none;
+    background-color: black;
+    border-radius: 35px;
+    width: 37px;
+    height: 37px;
+
+}
+
+header a {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.offcanvas {
+    width: 376px;
+}
+
+.offcanvas-header {
+    justify-content: flex-end;
+}
+
+.offcanvas-body {
+    padding: 0;
+}
+
+.option-wrapper {
+    flex: .60;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 65vh;
+    overflow: scroll;
+}
+
+.option-wrapper a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.option-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.option-wrapper li {
+    display: list-item;
+    margin-top: 24px;
+}
+
+.fix-bottom {
+    flex: .40;
+    position: absolute;
+    bottom: 0;
+    height: 35%;
+    width: 100%;
+}
+
+.fix-bottom-image {
+    margin: 21px;
+    margin-bottom: 0;
+}
+
+.fix-bottom-image img {
+    width: 328px;
+    height: 136px;
+}
+
+.fix-bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 21px;
+    margin-right: 20px;
+}
+
+.fix-bottom-footer a {
+    text-decoration: none;
+}
+
+/*..section1-booking-widget..*/
+
+.section-transform{
+    transform: skewY(-2deg);
+}
+.container-transform{
+    transform: skewY(2deg);
+}
+.section-padding
+{
+    padding: 2rem 0 5rem 0
+}
+.hero-banner {
+    top: 63px;
+    width: 100%;
+    height: 38vh;
+    background-image: url(images/hero-banner.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.main-title-abs {
+    color: #ffffff;
+    max-width: 320px;
+    text-align: left;
+    position: absolute;
+    top: 13vh;
+    left: 16.5%;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+video {
+    object-fit: contain;
+}
+
+#video-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.booking-widget {
+    position: relative;
+    width: 100%;
+    height: 144px;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-widget-container li {
+    background-color: white;
+    list-style: none;
+}
+
+.booking-widget-container a {
+    text-decoration: none;
+}
+.booking-widget .btn:focus{
+    box-shadow: none;
+    color: black;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+}
+
+.booking-button {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+}
+
+.booking-widget-location {
+    background-color: rgb(235, 235, 235);
+    justify-content: space-between;
+    padding: 24px 24px 24px 16px;
+}
+
+.location-item {
+    background-color: white;
+    border: 1px solid grey;
+    margin-right: 25px;
+    padding: 10px;
+}
+
+.booking-widget-location input {
+    border: none;
+}
+
+.booking-widget-location button {
+    background-image: url(logo/ola_cabs_back.svg);
+    width: 262px;
+    height: 48px;
+    border: none;
+    border-left: 2px solid greenyellow;
+    border-bottom: 2px solid greenyellow;
+}
+
+.book-ola {
+    color: greenyellow;
+
+}
+
+/*..sectioin-3..*/
+
+.section-3 {
+    position: relative;
+    padding-top: 150px;
+}
+
+@media (min-width: 769px) {
+    .section-3 {
+        position: relative;
+        padding-top: 50px;
+    }
+
+}
+
+.section-3-div {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.image-div-section-3 img {
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+.electrified {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #000000;
+    text-shadow: 1.152px 1.152px 0 #fff, 1.728px 1.728px 0 #92c83e;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 10em;
+}
+
+.card-img-top {
+    width: 10em;
+}
+
+@media (max-width:576px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .section-3-div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hero-banner{
+        top:0;
+    }
+}
+/*..section-4..*/
+.section-4{
+    background-color: black;
+}
+.ola-s1{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1.152px 1.152px 0 #000000, 1.728px 1.728px 0 #92c83e;
+}
+.black-box-div{
+    flex-basis: 30rem;
+    gap: 16px;
+    width: 67rem;
+}
+.black-box{
+    border: .5px solid #dadada;
+    border-bottom: 0;
+    background-color: #151616;
+    color: white;
+    padding: 1rem 1rem 3rem 1rem;
+}
+.spec-card{
+    padding: 16px 24px;
+}
+.black-box {
+    border-image: linear-gradient(rgb(141 141 141),rgba(255, 255, 255, 0)) 15;
+    border-width: 1.5px;
+    border-style: solid;
+    padding: 16px 24px;
+    background: #151616;
+}
+
+.factory .factory-item:hover .factory-link{
+color: #16AA51;
+text-decoration: none;
+}
+.factory .factory-item .factory-link{
+    text-decoration: none;
+    color: #000000;
+}
+.factory .factory-item{
+    background-color: #F0F4F4;
+}
+.factory .img-desc{
+    padding: 70px 58px;
+    align-self: center;
+}
+.item-image{
+    width: 100%;
+}
+.footer{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 106px 20px 20px;
+}
+.newsletter-form{
+    float: right;
+}
+.footerContainer {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 106px 20px 20px;
+}
+.footerContainer ul{
+    list-style-type: none;
+}
+.footerContainer ul li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 48px 12px 0;
+}
+.footerBottomContainer {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footerBottomContainer p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #000000;
+    opacity: 0.3;
+}
+.footer-seperator{
+    border-top: 1px solid #E0E0E0 ;
+}
+.foots-nav li{
+    list-style-type: none;
+    padding: 5px 0;
+    display: inline;
+}
+@media only screen and (max-width: 768px)
+{
+    .normal {
+        background: none;
+        box-shadow: none;
+        border-radius: 0px;
+        overflow: hidden;
+        text-align: right;
+        z-index: 100;
+        height: 64px;
+        width: 100%;
+    }
+    .spec-card{
+        width: 100px;
+    }
+    .newsletter-form {
+        float: none;
+        width: 100%;
+    }  
+
+    .slider-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        overflow-x: scroll;
+        padding: 0px 16px;
+    }
+    .factory .factory-item{
+        flex-direction: column;
+        width: calc(100vw - 48px);
+        margin-right: 16px;
+    }
+    .factory-item img{
+        width: inherit;
+        height: auto;
+    }
+    .factory-item .img-wrapper{
+        width: calc(100vw - 48px);
+    }
+}
+
+@media (min-width: 1400px){
+    .container{
+        max-width: 67vw;
+    }    
+}
+
+@media only screen and (min-width: 768px)
+{
+    .factory .item-image {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 576){
+     /* .slider-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        overflow-x: scroll;
+        padding: 0px 16px;
+    }
+    .factory .factory-item{
+        flex-direction: column;
+        width: calc(100vw - 48px);
+    } */
+}
+.first-footer{
+    background-color: rgb(233, 233, 233);
+}
+.footerBottomContainer a{
+    text-decoration: none;
+    color: grey;
+}
+.first-footer button{
+    background-image: url(logo/ola_cabs_back.svg);
+    width: 18rem;
+    height: 3rem;
+    border: none;
+    border-left: 2px solid greenyellow;
+    border-bottom: 2px solid greenyellow;
+}
+.first-footer ul{
+    padding: 0;
+}
+.footer-input-box{
+    width: 100%;
+    height: 3rem;
+}
+
